@@ -1,0 +1,74 @@
+@use "../_utility/mixins";
+
+/** ------------------------------------------------------
+*   General default styling
+* ---------------------------------------------------- **/
+
+/* Make sure the page never scrolls horizontally
+   ---------------------------------------------------- */
+html {
+  overflow-x: hidden;
+  font-size: 10px; // This will set 1rem === 10px
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  // @include mixins.font("text-standard");
+  // remove this line after the the typography and font are set
+  font-size: 1.4rem;
+  background: var(--color-background);
+  color: var(--color-white);
+}
+
+.layout {
+  max-width: var(--xxl);
+  width: 100%;
+  height: 100dvh;
+  padding: 4rem 2.2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.logged-in {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 24rem 1fr;
+    grid-template-areas: "sidebar main";
+  }
+
+  > main {
+    grid-area: main;
+  }
+}
+
+p,
+li {
+  @include mixins.font("text-standard");
+}
+
+h1 {
+  @include mixins.font("title-900");
+}
+
+h2 {
+  @include mixins.font("title-800");
+}
+
+h3 {
+  @include mixins.font("title-700");
+}
+
+h4 {
+  @include mixins.font("title-600");
+}
+
+h5 {
+  @include mixins.font("title-500");
+}
+
+h6 {
+  @include mixins.font("title-400");
+}

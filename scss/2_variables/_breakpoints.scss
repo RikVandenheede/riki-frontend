@@ -1,0 +1,21 @@
+/*
+* Breakpoint variables
+*/
+
+$xs: 25em; // 350px
+$sm: 35em; // 490px
+$md: 48em; // 672px
+$lg: 60em; // 840px
+$xl: 84em; // 1176px
+$xxl: 90em; // 1260px
+$huge: 105em; // 1470px
+
+:root {
+  --xs: #{$xs}; // 400px
+  --sm: #{$sm}; // 560px
+  --md: #{$md}; // 768px
+  --lg: #{$lg}; // 960px
+  --xl: #{$xl}; // 1176px
+  --xxl: #{$xxl}; // 1440px
+  --huge: #{$huge}; // 1680px
+}

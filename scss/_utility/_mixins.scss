@@ -1,0 +1,73 @@
+@use "sass:list";
+@use "../2_variables/breakpoints";
+@use "sass:map";
+
+/*
+* Mixins
+*/
+
+/*
+* Font 
+*/
+@mixin font($type: "text-standard", $breakpoint: var(--md)) {
+  font-family: var(--#{$type}-mobile-family), sans-serif;
+  font-weight: var(--#{$type}-mobile-weight);
+  font-size: var(--#{$type}-mobile-size);
+  line-height: var(--#{$type}-mobile-lineheight);
+  letter-spacing: var(--#{$type}-mobile-spacing);
+
+  @media screen and (min-width: breakpoints.$md) {
+    font-family: var(--#{$type}-desktop-family), sans-serif;
+    font-weight: var(--#{$type}-desktop-weight);
+    font-size: var(--#{$type}-desktop-size);
+    line-height: var(--#{$type}-desktop-lineheight);
+    letter-spacing: var(--#{$type}-desktop-spacing);
+  }
+}
+
+/*
+* Media Queries
+*/
+
+$breakpoints: (
+  xs: 25em,
+  // 350px
+  sm: 35em,
+  // 490px
+  md: 48em,
+  // 672px
+  lg: 60em,
+  // 840px
+  xl: 84em,
+  // 1176px
+  xxl: 90em,
+  // 1260px
+  huge: 105em,
+  // 1470px
+);
+
+@mixin mq-min($breakpoint) {
+  @if $breakpoint {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin mq-max($breakpoint) {
+  @if $breakpoint {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin grid($columns, $width, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, $width);
+  gap: $gap;
+}

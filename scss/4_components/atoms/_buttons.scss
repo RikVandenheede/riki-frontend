@@ -1,0 +1,34 @@
+@use "../../_utility/mixins";
+
+.btn {
+  --border-radius: var(--radius-default);
+  --background: var(--color-accent3);
+  --color: var(--color-white);
+
+  border-radius: var(--border-radius);
+  background: var(--background);
+  color: var(--color);
+  padding: 0.7rem 3.6rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  @include mixins.font("text-standard");
+  transition: background-color 0.3s var(--ease);
+
+  &--primary {
+    --background: var(--color-primary);
+
+    &:hover {
+      --background: var(--color-primary-hover);
+    }
+  }
+
+  &--secondary {
+    --background: var(--color-secondary);
+
+    &:hover {
+      --background: var(--color-secondary-hover);
+    }
+  }
+}

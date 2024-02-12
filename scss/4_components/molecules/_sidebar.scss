@@ -1,0 +1,51 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: calc(100dvh - 8rem);
+  position: fixed;
+
+  > svg,
+  &__search,
+  &__filters > li {
+    margin-bottom: 3rem;
+  }
+
+  &__search {
+    max-width: 20rem;
+    width: 100%;
+    height: 3rem;
+    background: var(--color-accent3);
+    border-radius: var(--radius-default);
+  }
+
+  &__filters {
+    > li {
+      padding: 0 0 0 1rem;
+      position: relative;
+      cursor: pointer;
+
+      &.active {
+        color: var(--color-primary);
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0 auto 0 0;
+          width: 0.2rem;
+          background: var(--color-primary);
+          border-radius: 0 0.5rem 0.5rem 0;
+        }
+      }
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  > .btn {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,161 @@
+// /*
+// * Typography variables
+// */
+
+:root {
+	// title-1000-desktop
+	--title-1000-desktop-family: Quicksand;
+	--title-1000-desktop-weight: 700;
+	--title-1000-desktop-size: 5.6rem;
+	--title-1000-desktop-spacing: 0;
+
+	// title-900-desktop
+	--title-900-desktop-family: Quicksand;
+	--title-900-desktop-weight: 700;
+	--title-900-desktop-size: 4.8rem;
+	--title-900-desktop-spacing: 0;
+
+	// title-800-desktop
+	--title-800-desktop-family: Quicksand;
+	--title-800-desktop-weight: 700;
+	--title-800-desktop-size: 4rem;
+	--title-800-desktop-spacing: 0;
+
+	// title-700-desktop
+	--title-700-desktop-family: Quicksand;
+	--title-700-desktop-weight: 700;
+	--title-700-desktop-size: 3.2rem;
+	--title-700-desktop-spacing: 0;
+
+	// title-600-desktop
+	--title-600-desktop-family: Quicksand;
+	--title-600-desktop-weight: 700;
+	--title-600-desktop-size: 2.4rem;
+	--title-600-desktop-spacing: 0;
+
+	// title-500-desktop
+	--title-500-desktop-family: Quicksand;
+	--title-500-desktop-weight: 700;
+	--title-500-desktop-size: 1.8rem;
+	--title-500-desktop-spacing: 0;
+
+	// title-400-desktop
+	--title-400-desktop-family: Quicksand;
+	--title-400-desktop-weight: 700;
+	--title-400-desktop-size: 1.6rem;
+	--title-400-desktop-spacing: 0;
+
+	// title-1000-mobile
+	--title-1000-mobile-family: Quicksand;
+	--title-1000-mobile-weight: 700;
+	--title-1000-mobile-size: 3.8rem;
+	--title-1000-mobile-spacing: 0;
+
+	// title-900-mobile
+	--title-900-mobile-family: Quicksand;
+	--title-900-mobile-weight: 700;
+	--title-900-mobile-size: 3rem;
+	--title-900-mobile-spacing: 0;
+
+	// title-800-mobile
+	--title-800-mobile-family: Quicksand;
+	--title-800-mobile-weight: 700;
+	--title-800-mobile-size: 2.6rem;
+	--title-800-mobile-spacing: 0;
+
+	// title-700-mobile
+	--title-700-mobile-family: Quicksand;
+	--title-700-mobile-weight: 700;
+	--title-700-mobile-size: 2.3rem;
+	--title-700-mobile-spacing: 0;
+
+	// title-600-mobile
+	--title-600-mobile-family: Quicksand;
+	--title-600-mobile-weight: 700;
+	--title-600-mobile-size: 2rem;
+	--title-600-mobile-spacing: 0;
+
+	// title-500-mobile
+	--title-500-mobile-family: Quicksand;
+	--title-500-mobile-weight: 700;
+	--title-500-mobile-size: 1.8rem;
+	--title-500-mobile-spacing: 0;
+
+	// title-400-mobile
+	--title-400-mobile-family: Quicksand;
+	--title-400-mobile-weight: 700;
+	--title-400-mobile-size: 1.5rem;
+	--title-400-mobile-spacing: 0;
+
+	// text-small-desktop
+	--text-small-desktop-family: Quicksand;
+	--text-small-desktop-weight: 400;
+	--text-small-desktop-size: 1.2rem;
+	--text-small-desktop-spacing: 0;
+
+	// text-small-bold-desktop
+	--text-small-bold-desktop-family: Quicksand;
+	--text-small-bold-desktop-weight: 700;
+	--text-small-bold-desktop-size: 1.2rem;
+	--text-small-bold-desktop-spacing: 0;
+
+	// text-standard-desktop
+	--text-standard-desktop-family: Quicksand;
+	--text-standard-desktop-weight: 400;
+	--text-standard-desktop-size: 1.4rem;
+	--text-standard-desktop-spacing: 0;
+
+	// text-standard-bold-desktop
+	--text-standard-bold-desktop-family: Quicksand;
+	--text-standard-bold-desktop-weight: 700;
+	--text-standard-bold-desktop-size: 1.4rem;
+	--text-standard-bold-desktop-spacing: 0;
+
+	// text-large-desktop
+	--text-large-desktop-family: Quicksand;
+	--text-large-desktop-weight: 400;
+	--text-large-desktop-size: 1.8rem;
+	--text-large-desktop-spacing: 0;
+
+	// text-large-bold-desktop
+	--text-large-bold-desktop-family: Quicksand;
+	--text-large-bold-desktop-weight: 700;
+	--text-large-bold-desktop-size: 1.8rem;
+	--text-large-bold-desktop-spacing: 0;
+
+	// text-small-mobile
+	--text-small-mobile-family: Quicksand;
+	--text-small-mobile-weight: 400;
+	--text-small-mobile-size: 1rem;
+	--text-small-mobile-spacing: 0;
+
+	// text-small-bold-mobile
+	--text-small-bold-mobile-family: Quicksand;
+	--text-small-bold-mobile-weight: 700;
+	--text-small-bold-mobile-size: 1rem;
+	--text-small-bold-mobile-spacing: 0;
+
+	// text-standard-mobile
+	--text-standard-mobile-family: Quicksand;
+	--text-standard-mobile-weight: 400;
+	--text-standard-mobile-size: 1.2rem;
+	--text-standard-mobile-spacing: 0;
+
+	// text-standard-bold-mobile
+	--text-standard-bold-mobile-family: Quicksand;
+	--text-standard-bold-mobile-weight: 700;
+	--text-standard-bold-mobile-size: 1.2rem;
+	--text-standard-bold-mobile-spacing: 0;
+
+	// text-large-mobile
+	--text-large-mobile-family: Quicksand;
+	--text-large-mobile-weight: 400;
+	--text-large-mobile-size: 1.6rem;
+	--text-large-mobile-spacing: 0;
+
+	// text-large-bold-mobile
+	--text-large-bold-mobile-family: Quicksand;
+	--text-large-bold-mobile-weight: 700;
+	--text-large-bold-mobile-size: 1.6rem;
+	--text-large-bold-mobile-spacing: 0;
+}

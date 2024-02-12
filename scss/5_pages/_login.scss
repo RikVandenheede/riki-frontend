@@ -1,0 +1,27 @@
+.login {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__wrapper {
+    margin: 0 30rem 0 0;
+  }
+
+  .main-logo {
+    display: block;
+    margin: 0 auto 4rem;
+  }
+
+  form {
+    max-width: 40rem;
+  }
+}
+
+.background-login {
+  position: absolute;
+  inset: 0;
+  height: 100dvh;
+  width: auto;
+}

@@ -1,0 +1,37 @@
+.icon {
+  display: inline;
+
+  .svg-wrapper {
+    > div {
+      width: 6rem;
+      height: 6rem;
+      display: grid;
+      place-items: center;
+      background: var(--color-accent6);
+      border-radius: var(--radius-default);
+      cursor: pointer;
+
+      &:hover {
+        svg > path {
+          stroke: var(--color-primary);
+        }
+      }
+    }
+
+    svg {
+      width: 3.2rem;
+      height: 3.2rem;
+
+      path {
+        stroke: var(--color-accent2);
+        transition: stroke 0.3s var(--ease);
+      }
+    }
+
+    &__delete {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
